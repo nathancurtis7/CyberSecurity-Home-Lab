@@ -1,7 +1,7 @@
 # Cybersecurity Home Lab
 
 ## Overview
-This repo documents my personal cybersecurity home lab used to develop hands-on skills in networking, detection, SOC operations, and attack simulation.
+This repo documents my personal cybersecurity home lab used to develop hands-on skills in networking, detection, SecOps, and attack simulation.
 The lab is designed to mirror a small enterprise-style environment with clear separation between attacker, victim, and monitoring systems.
 
 ## Repo Map
@@ -16,7 +16,7 @@ The lab is designed to mirror a small enterprise-style environment with clear se
 Active — building out victim configuration and initial detections in Splunk.
 
 ## Objectives
-- Practice real-world SOC workflows
+- Practice real-world SecOps workflows
 - Simulate common attack techniques in a controlled environment
 - Analyse network traffic and host logs
 - Build detection logic aligned to certs such as Security+ and CySA+
