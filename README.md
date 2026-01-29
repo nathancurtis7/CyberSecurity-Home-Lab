@@ -2,8 +2,18 @@
 
 ## Overview
 This repo documents my personal cybersecurity home lab used to develop hands-on skills in networking, detection, SOC operations, and attack simulation.
-
 The lab is designed to mirror a small enterprise-style environment with clear separation between attacker, victim, and monitoring systems.
+
+## Repo Map
+- `architecture/` — lab overview and network diagram
+- `setup/` — build notes and configuration steps
+- `attacks/` — attack simulations and MITRE mappings
+- `detection/` — Splunk content and detections
+- `pcaps/` — packet captures (sanitised)
+- `notes/` — lessons learned / troubleshooting log
+
+- ## Project Status
+Active — building out victim configuration and initial detections in Splunk.
 
 ## Objectives
 - Practice real-world SOC workflows
