@@ -1,11 +1,27 @@
-## Network Segmentation
+# Lab Networking Configuration
 
-The home lab is deployed on a logically and physically separate network from my home WiFi network.
-The lab network operates on an isolated Layer 2 segment using a dedicated Ethernet interface and switch, preventing direct traffic flow between the lab environment and my home WiFi network.
-IP addresses are configured within a private RFC1918 range (`10.10.10.0/24` for example) and does not route to the home LAN.
-Any connectivity to external networks (e.g. updates or tool downloads) is explicitly controlled and enabled only when required.
+## Purpose
+To provide an isolated network environment for safe attack simulation and detection testing.
 
-This segmentation ensures:
-- Containment of attack simulations and malicious traffic
-- No exposure of personal devices to lab activity
-- Realistic enterprise-style network isolation
+## Scope
+Applies only to the internal home lab network. The home Wi-Fi and personal devices are excluded.
+
+## Environment
+- Private RFC1918 subnet (`10.10.10.0/24`)
+- Dedicated Ethernet interface
+- Managed switch
+- Windows host and Linux VM
+
+## Configuration
+The lab network is deployed on a logically and physically separate Layer 2 segment from the primary home Wi-Fi environment. Static IP addressing is used for lab hosts to ensure predictable traffic analysis.
+
+## Validation
+- Successful ICMP communication between lab hosts
+- No routing to the home LAN
+- Internet access disabled by default
+
+## Security Considerations
+Network isolation prevents attack traffic from impacting personal devices and mirrors enterprise network segmentation practices.
+
+## Notes / Lessons Learned
+Static addressing simplified Splunk correlation and PCAP analysis.
