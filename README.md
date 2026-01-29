@@ -13,7 +13,7 @@ The lab is designed to mirror a small enterprise-style environment with clear se
 - `notes/` — lessons learned / troubleshooting log
 
 - ## Project Status
-Active — building out victim configuration and initial detections in Splunk.
+Active : building out victim configuration and initial detections in Splunk.
 
 ## Objectives
 - Practice real-world SecOps workflows
